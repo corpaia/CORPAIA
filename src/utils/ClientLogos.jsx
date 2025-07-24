@@ -12,7 +12,7 @@ export default function ClientLogos() {
     { src: "/clients/mendiv.png", alt: "Client 2" },
     { src: "/clients/Logo.png", alt: "Client 3" },
     { src: "/clients/xpanzone.png", alt: "Client 4" },
-    { src: "/clients/logowithiso.webp", alt: "Client 5" },
+    { src: "/clients/Kamco.png", alt: "Client 5" },
   ];
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function ClientLogos() {
 
   return (
     <div className="w-full max-w-6xl mx-auto" ref={ref}>
-      <h3 className="text-center text-gray-500 text-sm uppercase tracking-widest mb-6">
+      <h3 className="text-center text-gray-300 text-sm uppercase tracking-widest mb-6">
         Trusted by forward-thinking companies
       </h3>
 
@@ -49,7 +49,7 @@ export default function ClientLogos() {
             key={index}
             src={logo.src}
             alt={logo.alt}
-            className="h-10 object-contain"
+            className="h-10 object-contain filter brightness-0 invert hover:filter-none transition duration-300"
           />
         ))}
       </motion.div>

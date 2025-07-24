@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-import { CheckCircle } from 'lucide-react'
-
+import { CheckCircle } from "lucide-react";
 
 export default function Demo() {
-
   const clientLogos = [
     { src: "/clients/Aguaneeta.png", alt: "Client 1" },
     { src: "/clients/mendiv.png", alt: "Client 2" },
     { src: "/clients/Logo.png", alt: "Client 3" },
     { src: "/clients/xpanzone.png", alt: "Client 4" },
-    { src: "/clients/logowithiso.webp", alt: "Client 5" },
+    { src: "/clients/kamco.png", alt: "Client 5" },
   ];
 
   const [formData, setFormData] = useState({
@@ -34,40 +32,44 @@ export default function Demo() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto pt-24 text-white p-8 flex flex-col lg:flex-row items-center justify-center gap-10">
+    <div className="max-w-7xl mx-auto pt-32 text-white p-8 flex flex-col lg:flex-row items-center justify-center gap-10">
+      {/* Left Section */}
       {/* Left Section */}
       <div className="md:flex-[1.5]">
-
-        <h1 className="text-4xl text-black font-bold leading-tight mb-4">
+        <h1 className="text-4xl text-white font-bold leading-tight mb-4">
           Automate Your Business <br />
           <span className="text-5xl bg-gradient-to-r from-[#a43f97] to-[#f36f28] bg-clip-text text-transparent">
             with Corpaia AI Agents
           </span>
         </h1>
-        <p className="text-lg text-black mb-6">
-          We deploys enterprise-grade AI agents that handle execution, decisions, and operations. so your team can focus on growth.
+        <p className="text-lg text-white mb-6">
+          We deploy enterprise-grade AI agents that handle execution, decisions,
+          and operations. So your team can focus on growth.
         </p>
         <ul className="space-y-3 mb-6">
-          <li className="flex items-start gap-2 text-black">
-            <CheckCircle className="text-green-600 w-5 h-5 mt-1" />
+          <li className="flex items-start gap-2 text-white">
+            <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
             <span>Intelligent customer support</span>
           </li>
-          <li className="flex items-start gap-2 text-black">
-            <CheckCircle className="text-green-600 w-5 h-5 mt-1" />
+          <li className="flex items-start gap-2 text-white">
+            <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
             <span>Enhanced employee experience</span>
           </li>
-          <li className="flex items-start gap-2 text-black">
-            <CheckCircle className="text-green-600 w-5 h-5 mt-1" />
+          <li className="flex items-start gap-2 text-white">
+            <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
             <span>AI-powered product recommendations</span>
           </li>
         </ul>
-        <p className="font-semibold text-black text-lg mb-2">Schedule a Demo</p>
-        <p className="text-black text-base">
-          for a personalized, no-commitment consultation. Discover how Botsonic can address your unique challenges and boost your business efficiency.
+        <p className="font-semibold text-white text-lg mb-2">Schedule a Demo</p>
+        <p className="text-white text-base">
+          for a personalized, no-commitment consultation. Discover how Corpaia
+          can address your unique challenges and boost your business efficiency.
         </p>
         <div className="mt-8 bg-white/10 rounded-xl p-4 overflow-hidden">
-          <div className="flex flex-col items-start gap-12 ">
-            <span className="text-sm uppercase text-gray-900 font-bold ">Trusted by leading companies</span>
+          <div className="flex flex-col items-start gap-12">
+            <span className="text-sm uppercase text-gray-400 font-bold">
+              Trusted by leading companies
+            </span>
             <div className="flex scroll-animation gap-10">
               {clientLogos.map((logo, index) => (
                 <img
@@ -85,10 +87,15 @@ export default function Demo() {
       {/* Right Section - Form */}
       <div className="md:flex-[1.5] mx-auto px-6 py-12 bg-white shadow-lg rounded-lg">
         {/* <h2 className="text-2xl font-bold text-black mb-6 text-center">Schedule a Demo</h2> */}
-        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form
+          onSubmit={handleSubmit}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
           {/** First Name */}
           <div>
-            <label className="block text-sm font-medium text-gray-700">First Name*</label>
+            <label className="block text-sm font-medium text-gray-700">
+              First Name*
+            </label>
             <input
               type="text"
               name="firstName"
@@ -100,7 +107,9 @@ export default function Demo() {
 
           {/** Last Name */}
           <div>
-            <label className="block text-sm font-medium text-gray-700">Last Name*</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Last Name*
+            </label>
             <input
               type="text"
               name="lastName"
@@ -112,7 +121,9 @@ export default function Demo() {
 
           {/** Work Email */}
           <div>
-            <label className="block text-sm font-medium text-gray-700">Work Email*</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Work Email*
+            </label>
             <input
               type="email"
               name="workEmail"
@@ -124,7 +135,9 @@ export default function Demo() {
 
           {/** Company Name */}
           <div>
-            <label className="block text-sm font-medium text-gray-700">Company Name*</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Company Name*
+            </label>
             <input
               type="text"
               name="companyName"
@@ -136,7 +149,9 @@ export default function Demo() {
 
           {/** Job Title */}
           <div>
-            <label className="block text-sm font-medium text-gray-700">Job Title*</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Job Title*
+            </label>
             <input
               type="text"
               name="jobTitle"
@@ -148,7 +163,9 @@ export default function Demo() {
 
           {/** Country */}
           <div>
-            <label className="block text-sm font-medium text-gray-700">Country/Region*</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Country/Region*
+            </label>
             <input
               type="text"
               name="country"
@@ -161,7 +178,9 @@ export default function Demo() {
           {/** Queries */}
           {/** Queries */}
           <div className="md:col-span-2">
-            <label className="block text-sm font-medium text-gray-700">Monthly Queries*</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Monthly Queries*
+            </label>
             <select
               name="queries"
               required
@@ -177,7 +196,9 @@ export default function Demo() {
 
           {/** Budget */}
           <div className="md:col-span-2">
-            <label className="block text-sm font-medium text-gray-700">Budget*</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Budget*
+            </label>
             <select
               name="budget"
               required
@@ -190,7 +211,6 @@ export default function Demo() {
               <option value="10k+">$10,000+</option>
             </select>
           </div>
-
 
           {/** Submit Button */}
           <div className="md:col-span-2 text-center mt-4">
