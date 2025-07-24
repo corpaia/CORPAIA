@@ -32,10 +32,10 @@ export default function ContactUsPage() {
 
     emailjs
       .sendForm(
-        "service_vgcdrr3",
-        "template_iwaufnj",
+        "service_npbtuyv",
+        "template_uc2b36r",
         formRef.current,
-        "SysCTBxfK5WWlQTH0"
+        "EMaHJ1aWOGHxzOu1N"
       )
       .then(
         () => {
